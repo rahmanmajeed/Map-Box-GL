@@ -1,7 +1,13 @@
+import { RouterProvider } from "react-router-dom";
+import { MapProvider } from "./contexts/MapContext";
+import router from "./routes";
+
 function App() {
   return (
     <>
-      <div>App</div>
+      <MapProvider>
+        <RouterProvider router={router} />
+      </MapProvider>
     </>
   );
 }
