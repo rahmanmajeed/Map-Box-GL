@@ -4,10 +4,15 @@ import Sidebar from "../components/shared/Sidebar";
 
 export default function Layout() {
   return (
-    <>
-      <Header />
+    <div id="container">
       <Sidebar />
-      <Outlet />
-    </>
+      <div className="wrapper">
+        <Header />
+        <div className="content">
+          <div className="area-list-wrapper">jfkdjfd</div>
+          <Outlet />
+        </div>
+      </div>
+    </div>
   );
 }
