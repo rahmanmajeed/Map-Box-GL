@@ -6,6 +6,7 @@ const MapContext = createContext({});
 
 const initialState = {
   app_title: "Sar Map",
+  location: [90.395439, 22.78286]
 };
 const MapProvider = ({ children }: Props) => {
   const [store, dispatch] = useReducer(reducer, initialState);

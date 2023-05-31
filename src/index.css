@@ -25,7 +25,7 @@ aside {
   bottom: 0;
   height: 100vh;
   background-color: #201f1f;
-  width: 3vw;
+  width: 4vw;
   overflow: hidden;
   z-index: 10;
   overflow: visible;
@@ -54,7 +54,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem calc(100vw - 97.5%);
+  padding: 1rem calc(100vw - 97%);
   background-color: #201f1f;
   text-transform: uppercase;
   z-index: 6;
@@ -77,8 +77,6 @@ header {
   right: 0;
   animation: fadeIn 2s ease-in-out;
 }
-
-
 
 @keyframes fadeIn {
   0% {
@@ -115,7 +113,7 @@ header {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -60%);
 }
 .logo-title {
   text-transform: capitalize;
@@ -133,14 +131,15 @@ header {
 }
 
 .sidebar-links {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
 }
 
-.sidebar-links a:link, a:visited {
+.sidebar-links a:link,
+a:visited {
   /* background-color: #5e5e5e; */
   color: rgb(238, 237, 237);
   padding: 1rem;
@@ -152,19 +151,53 @@ header {
 .sidebar-links a:hover {
   background-color: #5e5e5e;
 }
-.active{
+.active {
   background-color: #5e5e5e;
   border-left: #4287f5 solid 2px;
 }
 
-.area-list-wrapper{
+.sidenav {
+  height: 100%;
+  width: 20%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0%;
+  background-color: #111;
+  transition: 0.5s;
+  padding-top: 10rem;
+  /* overflow-x: hidden; */
+}
+
+.sidenav a {
+  padding: 2rem 2rem;
+  text-decoration: none;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  text-align: center;
+  background-color: #5e5e5e;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .btn-toggle {
   position: absolute;
-  top: 0%;
-  left: 3%;
-  height: 10rem;
-  width: 10rem;
-  background-color: #4287f5;
-  z-index: 10;
-  height: 75vh;
-  width: 20vh;
+  top: 50%;
+  background-color: inherit;
+  left:78%;
+  overflow: hidden;
+  z-index: -1;
+  right: 2px;
+  font-size: 1.5rem;
+  margin-left: 55px;
+}
+.about-content{
+  padding: 3rem;
+  text-align: center;
+  font-size: 5rem;
 }
