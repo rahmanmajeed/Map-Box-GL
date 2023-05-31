@@ -9,7 +9,6 @@ export default function Layout() {
       <div className="wrapper">
         <Header />
         <div className="content">
-          <div className="area-list-wrapper">jfkdjfd</div>
           <Outlet />
         </div>
       </div>

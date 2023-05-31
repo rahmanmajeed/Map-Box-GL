@@ -8,7 +8,12 @@ export default function Header() {
     <>
       <header>
         <p className="logo-title">satellite</p>
-        <div>language</div>
+        <div className="select-box">
+          <select name="" id="">
+            <option value="en">English</option>
+            <option value="en">Bangla</option>
+          </select>
+        </div>
       </header>
     </>
   );
